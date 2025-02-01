@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI-verkkomalli</title>
+</head>
+<body>
+    <article>
+        <section class="osi">
+           
+            
+            <h1>Css testit</h1>
+            <a href="https://fi.wikipedia.org/wiki/OSI-malli">Wikipedia</a>
+            <p>OSI (Open Systems Interconnection) -malli on käsitteellinen viitekehys, jota käytetään ymmärtämään verkkoviestintää seitsemän kerroksen kautta. Malli auttaa standardoimaan verkkoprotokollia ja vuorovaikutuksia eri tietokoneiden ja laitteiden välillä. Kukin kerros suorittaa tiettyjä toimintoja ja kommunikoi suoraan sen ylä- ja alapuolella olevien kerrosten kanssa. OSI-malli on tärkeä työkalu verkkoammattilaisille vianetsinnässä, suunnittelussa ja verkonratkaisujen toteutuksessa.</p>
+
+            <div class="kuva"></div>
+                <img src="osi.jpg" alt="OSI-mallin kaavio">
+            </div>
+            <header>
+              <h1>OSI-verkkomalli</h1>
+            <p> <strong>OSI-malli koostuu seitsemästä kerroksesta, joista kukin on suunniteltu suorittamaan tiettyjä tehtäviä, jotka ovat olennaisia verkkoviestinnälle:</strong></p>
+            <p><strong>1. Fyysinen kerros</strong>: Tämä on OSI-mallin alin kerros. Se käsittelee raakadataa ja sen siirtoa fyysisen välineen, kuten kaapeleiden, kytkinten ja verkkokorttien, kautta. Se määrittelee verkon fyysiset aspektit, kuten jännitteen, kaapelikoot ja siirtonopeudet.</p>
+            <p><strong>2. Datayhteyskerros</strong>: Datayhteyskerros varmistaa virheettömän tiedonsiirron laitteiden välillä samalla verkolla. Se pakkaa raakabittejä fyysisestä kerroksesta kehyksiksi ja käsittelee näiden kehyksien osoittamista. Esimerkkejä teknologioista, jotka kuuluvat tähän kerrokseen, ovat Ethernet ja Wi-Fi.</p>
+            <p><strong>3. Verkkokerros</strong>: Tämä kerros on vastuussa datan paketoinnista ja reitittämisestä laitteiden välillä eri verkoissa. Se varmistaa, että data voi kulkea lähteestä määränpäähän välilaitteiden, kuten reitittimien, kautta. Esimerkki protokollasta tässä kerroksessa on IP (Internet Protocol).</p>
+            <p><strong>4. Kuljetuskerros</strong>: Kuljetuskerros takaa luotettavan tiedonsiirron laitteiden välillä. Se huolehtii virheenkorjauksesta, virtausohjauksesta ja kadonneiden tietojen uudelleenlähetyksestä. Yleisimpiä protokollia tässä kerroksessa ovat TCP (Transmission Control Protocol) ja UDP (User Datagram Protocol).</p>
+            <p><strong>5. Istuntokerros</strong>: Tämä kerros hallinnoi ja kontrolloi vuorovaikutusta kahden laitteen välillä. Se luo, ylläpitää ja lopettaa istuntoja laitteiden välillä, varmistaen, että data on oikein synkronoitu viestinnän aikana.</p>
+            <p><strong>6. Esityskerros</strong>: Esityskerros on vastuussa datan muuntamisesta vastaanottavan laitteen ymmärtämään muotoon. Se käsittelee salausta, tiedonpakkausta ja tiedon muotoilua (esimerkiksi erilaisten merkistöjen välillä tapahtuvaa käännöstä).</p>
+            <p><strong>7. Sovelluskerros</strong>: Tämä on OSI-mallin ylimmäinen kerros, jossa loppukäyttäjän sovellukset ja verkkopalvelut toimivat. Se tarjoaa verkkopalveluja suoraan käyttäjän sovellukselle, kuten sähköpostille, tiedostonsiirrolle ja verkkoselaamiselle. Yleisimpiä protokollia ovat HTTP, FTP ja SMTP.</p>
+        </header>
+
+        
+            <footer>
+            <h2>Cisco-kytkimen peruskomennoista</h2>
+            <p><strong>Cisco-kytkinten ja muiden verkon laitteiden hallinta onnistuu komentoriviltä. Alla on esimerkkejä Cisco-kytkimen peruskomennoista, jotka liittyvät tietokoneverkon hallintaan:</strong></p>
+            <p><strong>1. Yhteys laitteeseen</strong>: Ensin yhdistetään Cisco-laitteeseen sarjaportin tai SSH:n kautta (etäyhteys, jos se on mahdollinen). Tämän jälkeen kirjaudutaan sisään laitteen komentoriville.</p>
+            <p><strong>2. Laitteen tilan tarkastelu</strong>: Komento <code>show version</code> näyttää laitteen ohjelmistoversion, muistinkäytön ja muut tärkeät tiedot.</p>
+            <p><strong>3. Verkkoliittymien tarkastelu</strong>: Komento <code>show interfaces</code> näyttää laitteen fyysisten porttien tilan, kuten IP-osoitteet ja liikenteen tilastot.</p>
+            <p><strong>4. Reititystaulun tarkastelu</strong>: Komento <code>show ip route</code> näyttää kytkimen reititystaulun, eli miten data reititetään eri verkkojen välillä.</p>
+            <p><strong>5. Verkon määrittäminen</strong>: Jos haluat määrittää IP-osoitteen tietyille porteille, käytä komentoa <code>interface gigabitEthernet 0/1</code> ja sitten komento <code>ip address 192.168.1.1 255.255.255.0</code>.</p>
+            <p><strong>6. Salasanojen määrittäminen</strong>: Komento <code>enable secret</code> asettaa laitteen pääkäyttäjän salasanan, joka suojaa pääsyn laitteeseen.</p>
+            <p><strong>7. VLAN:ien määrittäminen</strong>: Komento <code>vlan 10</code> luo VLAN-verkkoalueen ja voit määrittää sille eri asetuksia, kuten nimeämisen ja porttikohtaiset asetukset.</p>
+        </footer>
+     </section>
+
+        <section>
+            <h3>Tämän tekstin kirjoitti chat gpt</h3>
+        </section>
+    </article>
+
+</body>
+</html>
+
+
+
+
+
