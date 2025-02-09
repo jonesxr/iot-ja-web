@@ -1,0 +1,81 @@
+.bedge-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.bedge-grid img {
+    max-width: 25%;
+    height: auto; 
+}
+
+
+/*ulkoasu*/
+.valikko {
+    background-color: #dab7b7;
+    padding: 10px;
+    width: 100%;
+}
+
+/*ylämenu normaalikoolle*/
+.menu {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    padding: 9px;
+    
+}
+
+/*kun leveys alle 800px keskitetään linkit*/
+@media (max-width: 800px) {
+    .menu {
+        justify-content: center;
+    }
+}
+
+/* tilaa linkkien väliin*/
+.menu li {
+    margin: 5px;
+}
+
+
+
+/*footer*/
+.footer {
+    background-color: rgb(16, 221, 16);
+    grid-area: footer;
+    text-align: center;
+    
+}
+
+/* main content */
+.main-content {
+    background-color: rgb(152, 214, 235);
+    grid-area: main-content;
+    text-align: center;
+}
+
+/* header */
+.header {
+    background-color: rgb(236, 99, 99);
+    grid-area: header;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+body {
+    display : grid;
+    grid-template-rows: 100px 1fr 200px;
+    grid-template-areas:
+    "header"
+    "main-content"
+    "footer";
+    
+    font-family :system-ui;
+    height: 100vh
+   
+}
+
+
