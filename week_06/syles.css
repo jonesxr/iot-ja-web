@@ -1,0 +1,43 @@
+
+body {
+    background-color: #75797c; 
+   
+}
+
+.navbar {
+    background-color: #343a40 ;
+}
+
+@media (max-width: 700px) {
+    .navbar .container {
+        justify-content: center;
+    }
+}
+
+
+.carousel img {
+    transform: scale(0.5);
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.card {
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.container .row .col {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+
+.social-icon {
+    font-size: 32px;
+    color: #0d6efd;
+    margin: 10px;
+}
