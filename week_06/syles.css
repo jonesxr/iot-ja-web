@@ -1,11 +1,19 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
 
 body {
-    background-color: #75797c; 
-   
+    background-color: #96a0a5; /* Taustaväri */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    
 }
 
 .navbar {
-    background-color: #343a40 ;
+    background-color: #343a40;
 }
 
 @media (max-width: 700px) {
@@ -14,19 +22,18 @@ body {
     }
 }
 
-
 .carousel img {
-    transform: scale(0.5);
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+    max-width: 100px;  
+
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
 .card {
     margin: 20px auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 .container .row .col {
     padding: 20px;
@@ -35,9 +42,20 @@ body {
     border: 1px solid #dee2e6;
 }
 
-
 .social-icon {
     font-size: 32px;
     color: #0d6efd;
     margin: 10px;
+}
+
+footer.custom-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    bottom :0;
+}
+
+footer.custom-footer p {
+    margin-top: auto;
 }

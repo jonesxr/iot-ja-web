@@ -3,168 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Bootstrap Page</title>
+    <title>Bootstrap Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="syles.css">
 </head>
 <body>
-   
+  
     <nav class="navbar navbar-expand-lg custom-navbar p-3">
         <div class="container">
-            <a class="navbar-brand" href="#"> Bootstrap Page</a>
+            <a class="navbar-brand" href="#">Bootstrap Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2"><a class="nav-link" href="#" data-bs-toggle="tooltip" title="Go to Home">Home</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#" data-bs-toggle="tooltip" title="Learn more about us">About</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#" data-bs-toggle="tooltip" title="Contact us for inquiries">Contact</a></li>
-                    
-                    <button type="button" class="btn btn-info" data-bs-toggle="popover" title="Additional Information" data-bs-content="This popover provides more details about the information.">
-                        Click for more information.
-                    </button>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Contact</a></li>
+                    <a href="https://github.com/jonesxr" class="nav-item mx-2 nav-link text-decoration-none">GitHub</a>
                 </ul>
             </div>
         </div>
     </nav>
 
-     
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="kis.jpg" class="d-block w-50 carousel-img" alt="Slide 1">
-            </div>
-            <div class="carousel-item">
-                <img src="kis.jpg" class="d-block w-50 carousel-img" alt="Slide 2">
-            </div>
-            <div class="carousel-item">
-                <img src="kis.jpg" class="d-block w-50 carousel-img" alt="Slide 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-
-    
     <div class="container mt-4">
-        <div class="card" style="width: 18rem;">
-            <img src="kis.jpg" class="card-img-top" alt="Card Image">
-            <div class="card-body">
-                <h5 class="card-title">John Edgy</h5>
-                <p class="card-text">Sängyn lämmittäjä</p>
-                <a href="#" class="btn custom-btn"></a>
+        
+        <div id="carouselExample" class="carousel slide mb-4">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="kis.jpg" class="d-block w-100 carousel-img" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="kis.jpg" class="d-block w-100 carousel-img" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="kis.jpg" class="d-block w-100 carousel-img" alt="Slide 3">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-    </div>
 
-   
-    <div class="container text-center mt-4">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Rekisteröidy nyt nappi
-        </button>
-    </div>
-
-   
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="kis.jpg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nikki</h5>
+                        <p class="card-text">kuvaus</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                   
-                    <form id="registrationForm" action="#" method="post" novalidate>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
-                            <div class="invalid-feedback">
-                                Please enter your full name.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                            <div class="invalid-feedback">
-                                Please enter a valid email address.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-                            <div class="invalid-feedback">
-                                Please enter a password.
-                            </div>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="terms" required>
-                            <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
-                            <div class="invalid-feedback">
-                                You must agree to the terms and conditions.
-                            </div>
-                        </div>
-                    </form>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="kis.jpg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nikki</h5>
+                        <p class="card-text">kuvaus</p>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" form="registrationForm">Register</button>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="kis.jpg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nikki</h5>
+                        <p class="card-text">kuvaus</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-  
-    <script>
-        (function () {
-            'use strict'
-            window.addEventListener('load', function () {
-                var forms = document.getElementsByClassName('needs-validation')
-                Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-            }, false)
-        })()
-    </script>
+    <div class="card text-center mb-4">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+            2 days ago
+        </div>
+    </div>
 
     
-    <footer class="custom-footer text-white text-center p-3 mt-4">
-       
-        <a href="https://github.com/jonesxr" class="text-white me-3" data-bs-toggle="tooltip" title="Github">
-            <img src="kis.jpg" alt="GitHub Logo" style="width: 30px; height: 30px;">
-        </a>
-        <p>&copy; Githubi</p>
+    <footer class="custom-footer text-white text-center p-3">
+        <p>&copy; 2025 Bootstrap Page</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-       
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl);
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
 
 
 
