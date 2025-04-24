@@ -1,0 +1,22 @@
+/*all circles*/
+.circle {
+    width: 200px;
+    height: 200px;
+    /*ymppyr'*/
+    border-radius : 50%;
+    display: inline-block;
+   
+    cursor : pointer;
+    
+}
+
+/*each one*/
+.green { background-color: green; }
+.red { background-color: red; }
+.blue { background-color: blue; }
+
+
+/*piilotus css*/
+.hidden {
+    display: none;
+}

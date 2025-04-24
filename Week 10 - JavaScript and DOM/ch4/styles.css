@@ -1,0 +1,20 @@
+#area {
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;  /*reuna */
+    
+    margin: 20px auto; /* keskelle */
+
+    position: relative ; /*tarvitaan position absoluten kanssa kuulemma */
+}
+
+.shape {
+
+    position: absolute; 
+
+    background-color: #e61010; 
+
+    cursor: pointer; 
+    width: 50px; 
+    height: 50px; 
+}
